@@ -158,16 +158,18 @@ footer {
   text-decoration: none;
 }
 
-.btn.secondary {
-  background: rgba(255,255,255,0.2);
-  color: #ffffff;
-}
+.footer-identity { text-align: right; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: flex-end; }
+.footer-links a { color: #ffffff; font-weight: 700; text-decoration: none; }
+.footer-links a:hover, .footer-links a:focus-visible { text-decoration: underline; }
 
 @media (max-width: 640px) {
   footer {
     grid-template-columns: 1fr;
     gap: 12px;
   }
+  .footer-identity { text-align: left; }
+  .footer-links { justify-content: flex-start; }
 }
 </style>
 </head>
@@ -247,9 +249,14 @@ footer {
 <footer>
   <div>
     <a class="btn" href="./index.html">Browse Case Studies</a>
-    <a class="btn secondary" href="mailto:wayne.kirk.schmidt@gmail.com">Contact</a>
   </div>
-  <div class="muted">© ChangeIS</div>
+  <div class="footer-identity">
+    <div class="footer-links">
+      <a href="https://www.waynekirkschmidt.me">WAYNE KIRK SCHMIDT</a>
+      <a href="https://changeis.io">CHANGEIS</a>
+    </div>
+    <div class="muted">© ChangeIS</div>
+  </div>
 </footer>
 
 </body>
