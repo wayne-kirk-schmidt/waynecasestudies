@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The S·T·A·R·R·Y Framework — ChangeIS Case Studies</title>
+
+<style>
+:root {
+  --ink: #0f2742;
+  --muted: #6b7280;
+  --brand: #244a86;
+}
+
+* { box-sizing: border-box; }
+
+/* =========================
+   BACKGROUND
+========================= */
+body {
+  margin: 0;
+
+  background-image: url("./background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER (WHITE TEXT)
+========================= */
+header {
+  padding: 48px 22px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: #ffffff;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* readability boost */
+header h1,
+header p {
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+h2 {
+  margin-top: 2.2rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+p { margin: 0.75rem 0; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 22px 40px;
+}
+
+/* =========================
+   PANELS
+========================= */
+.panel {
+  background: rgba(255,255,255,0.88);
+  border-radius: 16px;
+  padding: 24px 26px;
+  margin-top: 18px;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+
+  color: var(--ink);
+}
+
+/* =========================
+   STARRY
+========================= */
+.starry {
+  display: grid;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.starry div {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(36,74,134,0.1);
+}
+
+.starry div:last-child {
+  border-bottom: none;
+}
+
+.letter {
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--brand);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* =========================
+   MUTED TEXT FIX
+========================= */
+.muted {
+  color: #6b7280;
+}
+
+/* when muted text is outside panels */
+main .muted:not(.panel .muted),
+footer .muted {
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 22px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+
+  color: rgba(255,255,255,0.75);
+}
+
+.btn {
+  background: #0f2742;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background: rgba(255,255,255,0.2);
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ChangeIS — Project Delivery Case Studies</h1>
+  <p>
+    A practical record of how complex systems were improved, stabilized,
+    or rebuilt — using disciplined engineering, clear trade-offs,
+    and measurable outcomes.
+  </p>
+</header>
+
+<main>
+
+  <section class="panel">
+    <h2>What this is</h2>
+    <p>
+      This site is a curated set of real-world project case studies delivered
+      across financial services, security, infrastructure, and regulated
+      environments.
+    </p>
+    <p>
+      Each case study focuses on <strong>what changed</strong>, <strong>why it mattered</strong>,
+      and <strong>what was learned</strong> — not on tools for their own sake.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>How to read the case studies</h2>
+    <p>
+      Every case study is documented using the <strong>S.T.A.R.R.Y.</strong> format.
+      This connects decisions and delivery with evidence, lessons learned, and business value. The guiding aim is simple: <strong>extend your reach</strong>.
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin-top:12px;">
+        <tr style="border-bottom:1px solid rgba(36,74,134,0.15)"><td style="width:28px;font-weight:900;font-size:1.1rem;color:#244a86;padding:10px 8px;vertical-align:middle;text-align:center">S</td><td style="width:110px;font-weight:700;color:#0f2742;padding:10px 8px;vertical-align:middle">Situation</td><td style="color:#4b5563;padding:10px 8px;vertical-align:middle">The business or operational context, the problem, and why it mattered.</td></tr>
+        <tr style="border-bottom:1px solid rgba(36,74,134,0.15)"><td style="width:28px;font-weight:900;font-size:1.1rem;color:#244a86;padding:10px 8px;vertical-align:middle;text-align:center">T</td><td style="width:110px;font-weight:700;color:#0f2742;padding:10px 8px;vertical-align:middle">Tasks</td><td style="color:#4b5563;padding:10px 8px;vertical-align:middle">The objectives, responsibilities, and constraints of the work.</td></tr>
+        <tr style="border-bottom:1px solid rgba(36,74,134,0.15)"><td style="width:28px;font-weight:900;font-size:1.1rem;color:#244a86;padding:10px 8px;vertical-align:middle;text-align:center">A</td><td style="width:110px;font-weight:700;color:#0f2742;padding:10px 8px;vertical-align:middle">Actions</td><td style="color:#4b5563;padding:10px 8px;vertical-align:middle">The concrete steps taken, including design, implementation, and collaboration.</td></tr>
+        <tr style="border-bottom:1px solid rgba(36,74,134,0.15)"><td style="width:28px;font-weight:900;font-size:1.1rem;color:#244a86;padding:10px 8px;vertical-align:middle;text-align:center">R</td><td style="width:110px;font-weight:700;color:#0f2742;padding:10px 8px;vertical-align:middle">Results</td><td style="color:#4b5563;padding:10px 8px;vertical-align:middle">What changed, supported by evidence such as response time, reliability, or quality.</td></tr>
+        <tr style="border-bottom:1px solid rgba(36,74,134,0.15)"><td style="width:28px;font-weight:900;font-size:1.1rem;color:#244a86;padding:10px 8px;vertical-align:middle;text-align:center">R</td><td style="width:110px;font-weight:700;color:#0f2742;padding:10px 8px;vertical-align:middle">Reflection</td><td style="color:#4b5563;padding:10px 8px;vertical-align:middle">What was learned, what worked, and what could be improved or repeated.</td></tr>
+        <tr><td style="width:28px;font-weight:900;font-size:1.1rem;color:#244a86;padding:10px 8px;vertical-align:middle;text-align:center">Y</td><td style="width:110px;font-weight:700;color:#0f2742;padding:10px 8px;vertical-align:middle">Yield</td><td style="color:#4b5563;padding:10px 8px;vertical-align:middle">The value produced: financial return, operational capacity, risk reduction, or strategic benefit. State estimates and their basis clearly.</td></tr>
+      </table>
+  </section>
+
+  <section class="panel">
+    <h2>How to explore</h2>
+    <p>Case studies can be browsed and filtered by:</p>
+    <ul>
+      <li>Location</li>
+      <li>Industry</li>
+      <li>Discipline</li>
+
+    </ul>
+    <p class="muted">
+      Select tags to find relevant examples. Selections within a category match any selected tag; selections across categories must all match.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>About ChangeIS</h2>
+    <p>
+      ChangeIS focuses on helping organizations move from
+      <em>fragile complexity</em> to <em>intentional systems</em>.
+    </p>
+    <p>
+      Engagements typically sit at the intersection of engineering,
+      operations, security, and decision-making — where clarity,
+      not scale, is the limiting factor.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <a class="btn" href="./index.html">Browse Case Studies</a>
+    <a class="btn secondary" href="mailto:wayne.kirk.schmidt@gmail.com">Contact</a>
+  </div>
+  <div class="muted">© ChangeIS</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="ChangeIS project delivery case studies — real outcomes across DevOps, ML/AI, and Security."/>
+<title>Project Delivery — Case Studies · ChangeIS</title>
+<link rel="preload" href="./background.webp" as="image" type="image/webp"/>
+<link rel="dns-prefetch" href="https://changeis.io"/>
+<link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="./index.html">Case Studies</a>
+  <div class="nav-center">
+    All case studies follow the <a href="./explainer.html">S·T·A·R·R·Y</a> format
+  </div>
+  <ul class="nav-links">
+    <li><a href="https://changeis.io/#domains">Domains</a></li>
+    <li><a href="https://changeis.io/#approach">Approach</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="filter-strip">
+    <div class="filter-strip-inner">
+      <table class="filter-table">
+        <tbody>
+          <tr>
+            <td class="filter-label">Location</td>
+            <td class="filter-chips"><div class="chips" id="chips-location"></div></td>
+          </tr>
+          <tr>
+            <td class="filter-label">Industry</td>
+            <td class="filter-chips"><div class="chips" id="chips-industry"></div></td>
+          </tr>
+          <tr>
+            <td class="filter-label">Discipline</td>
+            <td class="filter-chips"><div class="chips" id="chips-discipline"></div></td>
+          </tr>
+          <tr class="filter-clear-row">
+            <td colspan="2"><button class="clear-btn" id="clearBtn">Clear filters</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <main>
+    <div class="carousel-track" id="carouselTrack" aria-live="polite">
+      <div class="loading">Loading case studies...</div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="btn-prev" aria-label="Previous page" disabled></button>
+      <span class="carousel-info" id="page-info" aria-live="polite"></span>
+      <button class="carousel-btn" id="btn-next" aria-label="Next page" disabled></button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.waynekirkschmidt.me">Wayne Kirk Schmidt</a>
+      <a class="footer-link" href="https://changeis.io">ChangeIS</a>
+    </div>
+    <div class="footer-copy">ChangeIS &copy; 2026 &middot; Boston &middot; Tokyo &middot; Global</div>
+  </footer>
+
+</div><!-- /.page-wrap -->
+
+<script src="./case-data.js" defer></script>
+<script src="./gallery.js" defer></script>
+</body>
+</html>
